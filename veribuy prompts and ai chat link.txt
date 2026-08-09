@@ -1,0 +1,524 @@
+veribuy
+  
+
+
+# VeriBuy — AI Product Verification Platform (Master Prompt)
+
+## Project Overview
+
+Build a premium, Apple-inspired, single-page web application called **VeriBuy** that helps users verify the authenticity and trustworthiness of products before purchasing them online.
+
+The core experience is simple:
+
+- The user pastes a product URL from an e-commerce platform (Amazon, Flipkart, Meesho, Myntra, Ajio, eBay, Walmart, etc.).
+- An AI Verification Engine performs a comprehensive background analysis.
+- The website displays a professional report that helps users decide whether the product is safe to purchase.
+
+**Important:** If the application is not connected to real APIs, clearly label the analysis as a **simulation/demo**. If real integrations are available, perform actual checks and only display completed analyses.
+
+---
+
+# Design Language
+
+Create a premium Apple-inspired interface.
+
+Use:
+
+- Large white space
+- Minimalistic layout
+- Glassmorphism with subtle blur
+- Rounded corners (16–20px)
+- Thin borders
+- Smooth animations
+- SF Pro/System fonts
+- Beautiful Light & Dark Mode
+- Soft shadows
+- Professional dashboard aesthetic
+
+Color palette:
+
+- White
+- Off-white
+- Light Gray
+- Black
+- Space Gray
+- Apple Blue (#0071E3)
+
+Animations should feel smooth, elegant, and premium.
+
+---
+
+# Website Structure
+
+## 1. Navigation
+
+Include:
+
+- VeriBuy Logo
+- Home
+- Features
+- How It Works
+- About
+- Theme Toggle
+
+Navigation should be sticky with backdrop blur.
+
+---
+
+## 2. Hero Section
+
+Large title:
+
+> Verify Before You Buy.
+
+Subtitle:
+
+> AI analyzes products, reviews, sellers, pricing, and authenticity to help you make smarter purchasing decisions.
+
+Include:
+
+Large URL Input
+
+Placeholder:
+
+> Paste an Amazon, Flipkart, Myntra, Meesho or any product link...
+
+Large "Analyze Product" button.
+
+---
+
+## 3. AI Verification Console
+
+After clicking Analyze:
+
+Open a beautiful animated terminal window.
+
+The AI prints its progress step-by-step.
+
+Example:
+
+```
+Initializing VeriBuy AI...
+
+✔ URL detected
+
+✔ Marketplace identified
+
+✔ Extracting Product Information
+
+✔ Loading Product Metadata
+
+✔ Comparing Product Across Marketplaces
+
+✔ Running Historical Price Analysis
+
+✔ Checking Seller Reputation
+
+✔ Detecting Fake Reviews
+
+✔ Review Sentiment Analysis
+
+✔ Review Pattern Analysis
+
+✔ Detecting Spam Reviews
+
+✔ Detecting AI-generated Reviews
+
+✔ Comparing Product Specifications
+
+✔ Looking for Duplicate Listings
+
+✔ Counterfeit Risk Analysis
+
+✔ Authenticity Score Calculation
+
+✔ Recommendation Generated
+
+Verification Complete
+```
+
+Each line appears with typing animation.
+
+Each completed step gets a green checkmark.
+
+Include a progress bar.
+
+---
+
+# AI Verification Engine
+
+The AI should analyze the following categories.
+
+---
+
+## Product Authenticity
+
+Estimate:
+
+- Genuine Product Probability
+- Fake Product Probability
+- Counterfeit Risk
+- Brand Match
+- Product Specification Match
+- Duplicate Listing Detection
+
+Display:
+
+Authenticity Score
+
+Example:
+
+94%
+
+Badge:
+
+Likely Genuine
+
+---
+
+## Seller Analysis
+
+Analyze:
+
+- Seller Rating
+- Seller History
+- Seller Reputation
+- Marketplace Trust
+- Fulfillment Type
+- Return Policy
+- Warranty Availability
+
+Output:
+
+Seller Trust Score
+
+---
+
+## Review Verification
+
+The AI analyzes reviews for:
+
+Fake reviews
+
+Bot-generated reviews
+
+Repeated reviews
+
+Spam
+
+Rating manipulation
+
+Review timing anomalies
+
+Suspicious review bursts
+
+Language similarity
+
+Review authenticity
+
+Sentiment distribution
+
+Output:
+
+Review Trust Score
+
+Example:
+
+89%
+
+Fake Review Risk:
+
+Low
+
+---
+
+## Price Analysis
+
+Compare:
+
+Current Price
+
+Average Market Price
+
+Lowest Available Price
+
+Highest Price
+
+Discount Accuracy
+
+Historical Pricing
+
+Price Trend
+
+Price Prediction
+
+Show:
+
+Interactive Line Chart
+
+Also show:
+
+"This product is currently 12% cheaper on another marketplace."
+
+or
+
+"This is the best available price."
+
+---
+
+## Cross-Platform Price Comparison
+
+Search for the same product on supported marketplaces.
+
+Examples:
+
+Amazon
+
+Flipkart
+
+Meesho
+
+Myntra
+
+Ajio
+
+eBay
+
+Walmart
+
+Display a comparison table:
+
+Marketplace
+
+Price
+
+Seller Rating
+
+Delivery
+
+Product Match
+
+Buy Link
+
+Highlight the lowest verified price.
+
+---
+
+## Product Specifications
+
+Compare:
+
+Model Number
+
+Brand
+
+RAM
+
+Storage
+
+Color
+
+Size
+
+Dimensions
+
+Features
+
+Specifications
+
+Flag missing or inconsistent specifications.
+
+---
+
+## Risk Analysis
+
+Display:
+
+Counterfeit Risk
+
+Seller Risk
+
+Price Manipulation Risk
+
+Fake Review Risk
+
+Overall Purchase Risk
+
+Each with colored badges:
+
+Low
+
+Medium
+
+High
+
+---
+
+## Final Recommendation
+
+Generate one of the following:
+
+✅ Safe to Buy
+
+⚠ Buy with Caution
+
+❌ High Risk Purchase
+
+Also generate a detailed AI explanation.
+
+Example:
+
+"Based on seller credibility, review quality, price comparison, and product consistency, this product appears genuine with a low counterfeit risk. Reviews show natural language diversity and pricing aligns with historical trends."
+
+---
+
+# Dashboard Cards
+
+Create beautiful cards for:
+
+Product Overview
+
+Product Image
+
+Product Name
+
+Brand
+
+Marketplace
+
+Seller
+
+Current Price
+
+Rating
+
+Authenticity Score
+
+Review Trust
+
+Seller Trust
+
+Price Score
+
+Counterfeit Risk
+
+Recommendation
+
+---
+
+# Charts
+
+Create animated charts for:
+
+Price History
+
+Review Sentiment
+
+Rating Distribution
+
+Authenticity Score
+
+Risk Analysis
+
+Comparison Graph
+
+Use modern SVG or Canvas charts.
+
+---
+
+# Micro Interactions
+
+Smooth hover effects.
+
+Cards slightly lift.
+
+Buttons glow softly.
+
+Terminal types text naturally.
+
+Numbers count upward.
+
+Charts animate.
+
+Progress bar fills smoothly.
+
+Dashboard fades in.
+
+Everything should feel polished.
+
+---
+
+# Responsive Design
+
+Support:
+
+Desktop
+
+Laptop
+
+Tablet
+
+Mobile
+
+Use fluid layouts and responsive typography.
+
+---
+
+# Technologies
+
+Frontend:
+
+- HTML5
+- CSS3
+- JavaScript (ES6 Modules)
+
+Suggested Libraries:
+
+- Chart.js
+- GSAP (animations)
+- Lucide Icons
+
+Optional Backend:
+
+- Node.js
+- Express
+- Python FastAPI
+
+Optional AI:
+
+- OpenAI API or another LLM for summaries
+- Review analysis model
+- Price comparison APIs
+- Marketplace APIs
+- Historical pricing APIs
+
+---
+
+# Code Requirements
+
+- Modular architecture
+- Clean folder structure
+- Reusable components
+- Well-commented code
+- Lazy loading where appropriate
+- Smooth performance
+- Accessibility support
+- SEO-friendly markup
+- Premium production-quality UI
+
+---
+
+# Important Functional Requirement
+
+When the user pastes a product URL and clicks **Analyze Product**, the application should automatically:
+
+1. Detect the marketplace.
+2. Extract the product information.
+3. Analyze available product details.
+4. Evaluate seller credibility.
+5. Assess review authenticity (using real data if integrated, or clearly labeled simulated/demo analysis otherwise).
+6. Compare prices across supported marketplaces where matching product data is available.
+7. Estimate counterfeit or authenticity risk using available evidence.
+8. Calculate overall trust scores.
+9. Generate an easy-to-understand AI summary.
+10. Present a beautiful interactive report with charts, metrics, and a clear recommendation: **Safe to Buy**, **Buy with Caution**, or **High Risk**.                               ,make sure that website look real time startup and use apple animations and user interface like apple websites and make sure the every thing properly work and give proper and impressive output to user and when user paste the product link then ai verify that link is product related or not and check the that product have genuine  reviewers and that product is real or fake and show that product where occurs at cheep price and show the total report of the product . and i give the chat link so add this also :[https://claude.ai/share/666afdd5-aeb6-415a-8a5f-a6d154b40b9a](https://claude.ai/share/666afdd5-aeb6-415a-8a5f-a6d154b40b9a).
